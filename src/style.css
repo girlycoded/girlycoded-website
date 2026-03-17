@@ -1,0 +1,78 @@
+body {
+	/* background-image: url('../res/bg3.jpg'); */
+	padding: 0px;
+	overflow-wrap: break-word;
+	word-break: break-all;
+}
+
+p, div {
+	margin: 0;
+	font-family: "The girl next door";
+	font-weight: 400;
+	font-size: 1.4rem;
+}
+
+p, a {
+	line-height: 1.5rem;
+	word-break: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: "Mali", cursive;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+footer {
+	padding-top: 8px;
+}
+
+nav a {
+	display: block;
+}
+
+ul {
+	margin: 0;
+	padding-left: 20px;
+}
+
+.header-title {
+	text-align: center;
+}
+
+.page {
+	max-width: 600px;
+	margin: 0 auto;
+	border: 1px;
+	border-style: solid;
+	padding: 5px;
+	/* min-height: 500px; */
+	display: grid;
+}
+
+.navbar {
+	border: 1px;
+	border-style: solid;
+	padding: 5px;
+}
+
+.content {
+	border: 1px;
+	border-style: solid;
+	padding: 5px;
+}
+
+.main-content {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	min-height: 200px;
+	gap: 5px
+}
