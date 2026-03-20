@@ -40,17 +40,3 @@ for (const key in result.data.activities) {
 	if(element.name!="Custom Status") continue;
 	status_label.textContent = `"${element.state}"`
 }
-
-let website_info_response = await fetch("https://nekoweb.org/api/site/info/girlycoded.nekoweb.org")
-if(!website_info_response.ok){
-	throw new Error(`Response status: ${website_info_response.status}`)
-}
-
-let website_info_result = await website_info_response.json()
-console.log(website_info_result)
-
-let site_visit_count = document.querySelector("#site-visit-count")
-let site_follower_count = document.querySelector("#site-follower-count")
-
-site_visit_count.textContent = `Website views: ${website_info_result.views}`
-site_follower_count.textContent = `Website followers: ${website_info_result.followers}`
