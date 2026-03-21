@@ -1,5 +1,7 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
+import ssiPlugin from "./plugins/ssi.js"
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 export default defineConfig({
   build: {
@@ -9,7 +11,19 @@ export default defineConfig({
         journal: resolve(__dirname, 'journal.html'),
 		projects: resolve(__dirname, 'projects.html'),
 		sitemap: resolve(__dirname, 'sitemap.html'),
+		navbar: resolve(__dirname, 'components/navbar.html'),
       }
     }
-  }
+  },
+  plugins: [
+	ssiPlugin(),
+	viteStaticCopy({
+		targets: [
+			{
+				src: 'src/main.js',
+				dest: '',
+			}
+		]
+	})
+	]
 })
