@@ -5,7 +5,7 @@ body {
 
 p, div {
 	margin: 0;
-	font-family: "The girl next door";
+	font-family: "Mali", cursive;
 	font-weight: 400;
 	font-size: 1.4rem;
 	line-height: 1.5rem;
@@ -16,7 +16,7 @@ p, a {
 }
 
 a {
-	font-family: "The girl next door";
+	font-family: "Mali", cursive;
 }
 
 h1, h2, h3, h4, h5, h6 {

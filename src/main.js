@@ -34,7 +34,7 @@ async function init() {
 		const element = result.data.activities[key];
 		
 		if(element.name!="Custom Status") continue;
-		status_label.textContent = `"${element.state}"`;
+		status_label.textContent = element.state?`"${element.state}"`:"";
 	}
 }
 init();

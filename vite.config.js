@@ -12,7 +12,12 @@ export default defineConfig({
 		projects: resolve(__dirname, 'projects.html'),
 		sitemap: resolve(__dirname, 'sitemap.html'),
 		navbar: resolve(__dirname, 'components/navbar.html'),
-      }
+      },
+	  output: {
+		entryFileNames: 'assets/main.js',
+		chunkFileNames: 'assets/[name].js',
+		assetFileNames: 'assets/[name][extname]'
+	  }
     }
   },
   plugins: [
