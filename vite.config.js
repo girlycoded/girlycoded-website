@@ -8,10 +8,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        journal: resolve(__dirname, 'journal.html'),
-		projects: resolve(__dirname, 'projects.html'),
-		sitemap: resolve(__dirname, 'sitemap.html'),
-		navbar: resolve(__dirname, 'components/navbar.html'),
+        journal: resolve(__dirname, 'journal/index.html'),
+		projects: resolve(__dirname, 'projects/index.html'),
+		sitemap: resolve(__dirname, 'sitemap/index.html'),
+		not_found: resolve(__dirname, 'not_found.html'),
+		// navbar: resolve(__dirname, 'components/navbar.html'),
       },
 	  output: {
 		entryFileNames: 'assets/main.js',
