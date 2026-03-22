@@ -71,7 +71,7 @@ ul {
 	gap: 5px
 }
 
-#side-content {
+.split-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
@@ -148,7 +148,7 @@ ul {
   #site-information {
 	grid-template-columns: 1fr;
   }
- #side-content {
+  .split-grid {
 	grid-template-columns: 1fr;
   }
 }
@@ -157,4 +157,8 @@ ul {
 	background-color: white;
 	border: black;
 	width: 100%;
+}
+
+#socials-container {
+	display: flex;
 }
