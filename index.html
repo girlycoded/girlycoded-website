@@ -3,7 +3,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="res/little-41.gif" type="image/x-icon">
-	<link rel="stylesheet" href="src/style.css">
+	<link rel="stylesheet" href="style.css">
 	<title>Girlycoded ✨🩷</title>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,9 +12,9 @@
 </head>
 	<body>
 		<div id="page" class="border">
-			<!--# include file="components/header.html" -->
+			<!--# include file="public/components/header.html" -->
 			<div id="site-information">
-				<div id="navbar" class="border textarea"> <!--# include file="components/navbar.html" --> </div>
+				<div id="navbar" class="border textarea"> <!--# include file="public/components/navbar.html" --> </div>
 				<div id="page-description" class="border textarea">
 					<p>hai im girlycoded! ∶3 <br><br> Uhh home page content whenever I put it here.</p>
 					<br>
@@ -24,25 +24,23 @@
 			<div id="side-content" class="border textarea split-grid">
 				<div id="discord-container">
 					<div id="discord-pfp-container">
-						<img src="res/pfp-placeholder.jpg" alt="" id="discordpfp" title="@girly_coded on Discord">
+						<img src="res/pfp-placeholder.jpg" alt="" id="discordpfp" title="@girly_coded on discord">
 						<div class="circle" id ="status-icon" title="Discord Status"></div>
 					</div>
 					<div id="discord-text-container">
-						<div id="myusername" class="text" title="My discord username">@girly_coded</div>
-						<div id="mystatus" class="text" title="My current discord status"></div>
+						<p id="myusername" class="text" title="@girly_coded on discord">@girly​_​coded</p>
+						<p id="mystatus" class="text" title="My current discord status"></p>
 					</div>
 				</div>
 				<div class="border textarea">
 					<p id="site-visit-count">Website views: <!--# views --></p> 
 					<p id="site-follower-count">Website followers: <!--# followers --></p> 
-					<!--# follow class="custom-follow" -->
+					<!--# follow width="140px" -->
 				</div>
 			</div>
-			<footer>
-				<p>© 2026 Girlycoded, All Rights Reserved || <a href="/sitemap/">Sitemap</a></p>
-			</footer>
+			<!--# include file="public/components/footer.html" -->
 		</div>
-		<script type="module" src="src/main.js"></script>
+		<script type="module" src="public/main.js"></script>
 		<script nomodule src="/main.js"></script>
 	</body>
 </html>

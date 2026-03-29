@@ -8,29 +8,31 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        journal: resolve(__dirname, 'journal/index.html'),
-		projects: resolve(__dirname, 'projects/index.html'),
-		profile: resolve(__dirname, 'profile/index.html'),
-		sitemap: resolve(__dirname, 'sitemap/index.html'),
+        journal: resolve(__dirname, 'journal.html'),
+		projects: resolve(__dirname, 'projects.html'),
+		profile: resolve(__dirname, 'profile.html'),
+		guestbook: resolve(__dirname, 'guestbook.html'),
+		sitemap: resolve(__dirname, 'sitemap.html'),
 		not_found: resolve(__dirname, 'not_found.html'),
-		// navbar: resolve(__dirname, 'components/navbar.html'),
+		
+		march_2026_blog: resolve(__dirname, 'blog/03-2026.html')
       },
 	  output: {
-		entryFileNames: 'assets/main.js',
+		entryFileNames: 'assets/[name].js',
 		chunkFileNames: 'assets/[name].js',
-		assetFileNames: 'assets/[name][extname]'
-	  }
+		assetFileNames: 'assets/[name][extname]',
+		}
     }
   },
   plugins: [
 	ssiPlugin(),
 	viteStaticCopy({
-		targets: [
-			{
-				src: 'src/main.js',
-				dest: '',
-			}
-		]
-	})
-	]
+  targets: [
+    {
+      src: 'public/sitemap.xml',
+      dest: ''
+    }
+  ]
+}),
+  ]
 })

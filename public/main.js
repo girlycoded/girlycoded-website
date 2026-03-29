@@ -23,7 +23,8 @@ async function init() {
 
 	const result = await response.json();
 
-	username_label.textContent = "@" + result.data.discord_user.username
+	username_label.textContent = "@" + result.data.discord_user.username.replace("_", "​_​")
+	username_label.style
 	img.src = `https://cdn.discordapp.com/avatars/634169631472353301/${result.data.discord_user.avatar}?size=128`;
 
 	var status_icon = document.querySelector("#status-icon");

@@ -1,5 +1,5 @@
 body {
-	/* background-image: url('../res/bg3.jpg'); */
+	background-image: url('res/bg2.jpg');
 	padding: 0px;
 }
 
@@ -39,7 +39,8 @@ footer {
 }
 
 nav a {
-	display: block;
+	/* display: block; */
+	  white-space: nowrap;
 }
 
 ul {
@@ -49,25 +50,28 @@ ul {
 
 #header-title {
 	text-align: center;
+	word-wrap: break-word;
+	overflow-wrap: anywhere;
 }
 
 #page {
 	max-width: 600px;
+	background-color: white;
 	margin: 0 auto;
 	padding: 5px;
-	/* min-height: 500px; */
 	display: grid;
 	gap: 4px;
+	border-radius: 4px;
 }
 
-#navbar {}
-
-#page-description {}
+#navbar {
+	max-height: 150px;
+}
 
 #site-information {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	min-height: 200px;
+	/* min-height: 200px; */
 	gap: 5px
 }
 
@@ -81,7 +85,7 @@ ul {
 }
 
 .text {
-	word-break: normal;
+	/* word-break: normal; */
 }
 
 .border {
@@ -142,6 +146,7 @@ ul {
 
 .date {
 	font-size: smaller;
+	color: grey;
 }
 
 @media (max-width: 400px) {
@@ -153,12 +158,46 @@ ul {
   }
 }
 
+/* @media (max-width: 450px) { */
+#myusername {
+	text-align: center;
+	word-wrap: break-word;
+	overflow-wrap: anywhere;
+}
+/* } */
+
 .custom-follow {
 	background-color: white;
 	border: black;
 	width: 100%;
 }
 
+.follow {
+	display: unset;
+}
+
 #socials-container {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
+
+.overflow {
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.height-small {
+	height: 200px;
+}
+
+.height-medium {
+	height: 215;
+}
+
+.post p {
+	font-size: large;
+}
+
