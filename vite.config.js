@@ -9,7 +9,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         journal: resolve(__dirname, 'journal.html'),
-		projects: resolve(__dirname, 'projects.html'),
+		portfolio: resolve(__dirname, 'portfolio.html'),
 		profile: resolve(__dirname, 'profile.html'),
 		guestbook: resolve(__dirname, 'guestbook.html'),
 		sitemap: resolve(__dirname, 'sitemap.html'),
@@ -26,13 +26,5 @@ export default defineConfig({
   },
   plugins: [
 	ssiPlugin(),
-	viteStaticCopy({
-  targets: [
-    {
-      src: 'public/sitemap.xml',
-      dest: ''
-    }
-  ]
-}),
   ]
 })
