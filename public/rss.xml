@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Your Site Title</title>
+    <link>https://your‑site.nekoweb.org</link>
+    <description>Updates from my site</description>
+
+    <item>
+      <title>March Journal Entries</title>
+      <link>https://girlycoded.nekoweb.org/blog/03-2026.html</link>
+      <description>Created dedicated journal page for each month of each year! You can read about how I made my website if you'd like :D</description>
+      <pubDate>Sat, 28 Mar 2026 12:00:00 GMT</pubDate>
+	  <guid>post1</guid>
+    </item>
+  </channel>
+</rss>
