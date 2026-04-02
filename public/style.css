@@ -65,8 +65,12 @@ ul {
 }
 
 #navbar {
-	max-height: 150px;
+	max-height: 200px;
 }
+
+#navbar ul {
+	margin-left: 14px;
+} 
 
 #site-information {
 	display: grid;
