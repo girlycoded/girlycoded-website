@@ -1,10 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" xmlns:atom="http://www.w3.org/2005/Atom" encoding="UTF-8"?>
+
 <rss version="2.0">
   <channel>
-    <title>Your Site Title</title>
-    <link>https://your‑site.nekoweb.org</link>
+  	<atom:link href="https://girlycoded.nekoweb.org/rss.xml" rel="self" type="application/rss+xml" />
+    <title>Girlycoded</title>
+    <link>https://girlycoded.nekoweb.org</link>
     <description>Updates from my site</description>
 
+	<item>
+      <title>April Journal Entries</title>
+      <link>https://girlycoded.nekoweb.org/blog/04-2026.html</link>
+      <description>Created april journal entries!</description>
+      <pubDate>Thu, 02 Apr 2026 12:49:56 -0600</pubDate>
+	  <guid>post2</guid>
+    </item>
     <item>
       <title>March Journal Entries</title>
       <link>https://girlycoded.nekoweb.org/blog/03-2026.html</link>
