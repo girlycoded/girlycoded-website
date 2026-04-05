@@ -22,6 +22,6 @@ jobs:
         uses: indiefellas/deploy2nekoweb@main
         with:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
-          nekoweb-domain: 'girlycoded.nekoweb.org'
+          nekoweb-domain: 'girlycoded.com'
           nekoweb-username: 'girlycoded'
           directory: 'dist'
