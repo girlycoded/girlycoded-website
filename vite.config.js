@@ -16,7 +16,8 @@ export default defineConfig({
 		not_found: resolve(__dirname, 'not_found.html'),
 		
 		march_2026_blog: resolve(__dirname, 'blog/03-2026.html'),
-		april_2026_blog: resolve(__dirname, 'blog/04-2026.html')
+		april_2026_blog: resolve(__dirname, 'blog/04-2026.html'),
+		may_2026_blog: resolve(__dirname, 'blog/05-2026.html')
       },
 	  output: {
 		entryFileNames: 'assets/[name].js',
